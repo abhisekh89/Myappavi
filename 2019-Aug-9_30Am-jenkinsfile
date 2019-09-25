@@ -1,12 +1,10 @@
 node {
     // git clone
-    
        stage('scm checkout'){
        url: 'https://github.com/abhisekh89/Myappavi'
     }
-    
-        stage('compile& package'){
-		sh "mvn clean package"
+       stage('compile& package'){
+		sh "mvn package"
 	}
 	
 	
