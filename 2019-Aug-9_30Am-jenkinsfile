@@ -3,7 +3,7 @@ node {
        stage('scm checkout'){
        url: 'https://github.com/abhisekh89/Myappavi'
     }
-       stage('compile& package'){
+       stage('compile & package'){
 		sh "mvn package"
 	}
 	
